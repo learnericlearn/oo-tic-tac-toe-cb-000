@@ -102,4 +102,12 @@ class TicTacToe
     @board.all? { |player| player == "X" || player == "O" }
   end
 
+  def draw?()
+    if won?(@board)
+      return false
+    elsif full?(@board)
+      return true
+    end
+  end
+
 end
