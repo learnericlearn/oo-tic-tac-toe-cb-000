@@ -56,11 +56,7 @@ class TicTacToe
     i_to_i = input_to_index(user_input)
     if valid_move?(i_to_i)
       puts "valid move"
-      if turn_count().even?
-        token = "X"
-      else
-        token = "O"
-      end
+      current_player()
       move(i_to_i, token)
       display_board()
     else
