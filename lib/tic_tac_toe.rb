@@ -120,4 +120,16 @@ class TicTacToe
     end
   end
 
+  def winner()
+    if won?()
+      xcount = @board.count("X")
+      ocount = @board.count("O")
+      if xcount > ocount
+        return "X"
+      elsif ocount > xcount
+        return "O"
+      end
+    end
+  end
+
 end
