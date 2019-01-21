@@ -8,5 +8,6 @@ def play
   if game.over? == false
     game.turn
   end
-
 end
+
+game.play
