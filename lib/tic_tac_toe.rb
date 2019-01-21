@@ -126,7 +126,7 @@ class TicTacToe
       ocount = @board.count("O")
       if xcount > ocount
         return "X"
-      elsif ocount > xcount
+      else
         return "O"
       end
     end
