@@ -3,4 +3,10 @@ require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
 game = TicTacToe.new
-game.play()
+
+def play
+  if game.over? == false
+    game.turn
+  end
+
+end
