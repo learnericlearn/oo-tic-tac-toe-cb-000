@@ -5,8 +5,7 @@ require_relative '../lib/tic_tac_toe.rb'
 game = TicTacToe.new
 
 def play
-  if game.over? == false
-    puts "game not over"
+  until game.over?
     game.turn
   end
 end
