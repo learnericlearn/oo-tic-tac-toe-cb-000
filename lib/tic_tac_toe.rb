@@ -103,9 +103,9 @@ class TicTacToe
   end
 
   def draw?()
-    if won?(@board)
+    if won?()
       return false
-    elsif full?(@board)
+    elsif full?()
       return true
     end
   end
