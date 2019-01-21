@@ -10,4 +10,4 @@ def play
   end
 end
 
-play
+game.play
