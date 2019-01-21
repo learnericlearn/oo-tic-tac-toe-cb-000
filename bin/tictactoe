@@ -6,6 +6,7 @@ game = TicTacToe.new
 
 def play
   if game.over? == false
+    puts "game not over"
     game.turn
   end
 end
